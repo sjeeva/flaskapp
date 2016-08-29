@@ -1,1 +1,1 @@
-# Simple Python Flask Application useful for Swarm Scaling Demo
+# Python Flask App for Swarm Demo
