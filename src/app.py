@@ -1,18 +1,23 @@
 from flask import Flask
 from flask import request
 import socket
+import datetime
 
-count = 0
+hitCount = 0
+startTime = datetime.datetime.now().strftime("%Y-%b-%d %H:%M:%S")
+
 app = Flask(__name__)
 
 @app.route("/")
 def show_details() :
-    global count
-    count = count + 1
+    global startTime
+    global hitCount
+    hitCount = hitCount + 1
     return "<html> " + \
            "<head><title>Docker + Flask Demo</title></head>" + \
            "<body>" + \
            "<table> "+ \
+           "<tr><td> Start Time </td> <td>" +  startTime + "</td> </tr>" \
            "<tr><td> Hostname </td> <td>" + socket.gethostname() + "</td> </tr>" \
            "<tr><td> Local Address </td> <td>" + socket.gethostbyname(socket.gethostname()) + "</td> </tr>" \
            "<tr><td> Remote Address </td> <td>" + request.remote_addr + "</td> </tr>" \
