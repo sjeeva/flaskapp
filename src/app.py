@@ -21,7 +21,7 @@ def show_details() :
            "<tr><td> Hostname </td> <td>" + socket.gethostname() + "</td> </tr>" \
            "<tr><td> Local Address </td> <td>" + socket.gethostbyname(socket.gethostname()) + "</td> </tr>" \
            "<tr><td> Remote Address </td> <td>" + request.remote_addr + "</td> </tr>" \
-           "<tr><td> Server Hit </td> <td>" + str(count) + "</td> </tr>" \
+           "<tr><td> Server Hit </td> <td>" + str(hitCount) + "</td> </tr>" \
            "</table>" + \
            "</body>" + \
            "</html>"
