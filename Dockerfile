@@ -1,4 +1,5 @@
-FROM python:alpine # points to 3.latest 
+# python:alpine is 3.{latest}
+FROM python:alpine 
 
 MAINTAINER Jeeva S. Chelladhurai
 
