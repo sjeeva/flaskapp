@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:alpine # points to 3.latest 
 
 MAINTAINER Jeeva S. Chelladhurai
 
