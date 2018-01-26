@@ -1,7 +1,7 @@
 # python:alpine is 3.{latest}
 FROM python:alpine 
 
-MAINTAINER Jeeva S. Chelladhurai
+LABEL maintainer="Jeeva S. Chelladhurai"
 
 RUN pip install flask
 
