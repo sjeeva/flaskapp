@@ -8,7 +8,7 @@ node ('docker') {
   }
   
   stage ('Docker deploy') {
-    sh "docker run -d -p 7373:5000"
+    sh "docker run -d -p 7373:5000 flaskapp"
   }
 
   stage ('Launch Info') {
